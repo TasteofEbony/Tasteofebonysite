@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Place an Order | A Taste of Ebony</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="A Taste of Ebony Logo" class="logo">
+        <h1>Place an Order</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="reviews.html">Reviews</a>
+    </nav>
+
+    <main>
+        <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data" class="order-form">
+            <label>Name:<input type="text" name="name" required></label>
+            <label>Email:<input type="email" name="email" required></label>
+            <label>Phone Number:<input type="tel" name="phone" required></label>
+            <label>Event Date & Time:<input type="datetime-local" name="event_date_time" required></label>
+            <label>Occasion:<input type="text" name="occasion" required></label>
+            <label>Theme & Color Scheme:<input type="text" name="theme_color" required></label>
+            <label>Serving Size:<input type="text" name="serving_size" required></label>
+            <label>Cake Size:<input type="text" name="cake_size"></label>
+            <label>Cake Flavor:<input type="text" name="cake_flavor"></label>
+            <label>Filling:<input type="text" name="filling"></label>
+            <label>Treat Package Size & Selection:<textarea name="treat_package"></textarea></label>
+            <label>Additional Details:<textarea name="additional_details"></textarea></label>
+            <label>Delivery or Pickup:
+                <select name="delivery_or_pickup" required>
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pickup</option>
+                </select>
+            </label>
+            <label>Upload Photo:<input type="file" name="photo"></label>
+            <button type="submit">Submit Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 A Taste of Ebony</p>
+    </footer>
+</body>
+</html>
